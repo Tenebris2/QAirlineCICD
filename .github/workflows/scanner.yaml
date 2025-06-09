@@ -3,7 +3,7 @@ name: Scanner for package vulnerabilites
 on:
   push:
     branches: [main]
-  pull:
+  pull_request:
     branches: [main]
 jobs:
   vuln-scan:
