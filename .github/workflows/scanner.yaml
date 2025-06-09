@@ -17,4 +17,4 @@ jobs:
           curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh
 
       - name: Scan dependencies
-        run: ./trivy fs --severity HIGH,CRITICAL --exit-code 1 .
+        run: trivy fs --severity HIGH,CRITICAL --exit-code 1 .
